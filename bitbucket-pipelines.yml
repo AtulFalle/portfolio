@@ -13,7 +13,6 @@ pipelines:
           - node
         script: # Modify the commands below to build your repository.
           - npm install
-          - heroku auth:token
           - pipe: atlassian/heroku-deploy:0.1.1
             variables:
               HEROKU_API_KEY: '98e8a1dc-7f74-46f0-a98f-6e511d8fbb84'
