@@ -4,17 +4,18 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
-    "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json"
+    "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json",
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
   },
   "private": true,
   "dependencies": {
-   "@angular-devkit/build-angular": "^0.11.3",
+    "@angular-devkit/build-angular": "^0.11.3",
     "@angular/cli": "^7.2.2",
     "@angular/compiler": "^7.2.1",
     "@angular/compiler-cli": "^7.2.1",
@@ -37,13 +38,12 @@
     "rxjs": "^6.0.0-rc.1",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.19",
-     "typescript": "~3.1.6",
-      "angular-bootstrap-md": "7.4.3",
+    "typescript": "~3.1.6",
+    "angular-bootstrap-md": "7.4.3",
     "express": "^4.16.4",
     "path": "^0.12.7"
   },
   "devDependencies": {
-
     "@angular/language-service": "^7.2.1",
     "@types/jasmine": "~3.3.0",
     "@types/jasminewd2": "~2.0.2",
@@ -60,9 +60,8 @@
     "protractor": "^5.4.1",
     "ts-node": "~7.0.1",
     "tslint": "~5.11.0"
-
   },
-   "engines": {
+  "engines": {
     "node": "10.15.1",
     "npm": "6.4.1"
   }
