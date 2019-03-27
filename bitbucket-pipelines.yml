@@ -19,7 +19,6 @@ pipelines:
               HEROKU_API_KEY: '98e8a1dc-7f74-46f0-a98f-6e511d8fbb84'
               HEROKU_APP_NAME: 'atulfalle'
               ZIP_FILE: 'angular-bootstrap-md-7.4.3.tgz'
-          - npm start
                  
 
 
