@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./portfolio",
     "outDir": "./dist",
     "sourceMap": true,
     "declaration": false,
