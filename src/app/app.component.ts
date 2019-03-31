@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+
+  active = 1;
+  public map: any = { lat: 51.678418, lng: 7.809007 };
+
+
+  selectPage(page: number) {
+    this.active = page;
+  }
 }

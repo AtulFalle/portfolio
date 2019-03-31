@@ -18,7 +18,7 @@
     padding: 5px !important;
 }
 .stepper-vertical li {
-    padding: 15px 12px !important;}
+    padding: 9px 12px !important;}
 .stepper-vertical li:not(:last-child):after{
     display: none;
 }
@@ -39,7 +39,7 @@
 }
 ul.stepper.stepper-vertical.mt-5 {
     background-color: #383737;
-    height: 100%;
+    height: 75vh;
 }
 .ul-padding {
     padding: 10px 0px;
@@ -74,4 +74,22 @@ ul.stepper.stepper-vertical.mt-5 {
 }
 .text-info {
     min-height: 14rem
+}
+img.social {
+    padding: 0 12px;
+}
+h2.heading.text-center {
+    font-size: 39px;
+    font-weight: 700;
+}
+h2.heading.text-center:after {
+    content: "";
+    border-bottom: 7px solid #FFA011;
+    width: 50vh;
+    display: block;
+    padding: 10px;
+}
+.content {
+    background: #383737 !important;
+    min-height: 75vh;
 }
