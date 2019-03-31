@@ -169,7 +169,6 @@
             "polyfills": "projects/mdb-demo/src/polyfills.ts",
             "tsConfig": "projects/mdb-demo/tsconfig.app.json",
             "assets": [
-              "projects/mdb-demo/src/favicon.ico",
               "projects/mdb-demo/src/assets"
             ],
             "styles": [
@@ -244,7 +243,6 @@
             ],
             "scripts": [],
             "assets": [
-              "projects/mdb-demo/src/favicon.ico",
               "projects/mdb-demo/src/assets"
             ]
           }
